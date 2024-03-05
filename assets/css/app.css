@@ -1,0 +1,138 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* font-family: 'lufga'; */
+}
+@font-face {
+    font-family: lufga;
+    src: url('lufga-www.Dfonts.org/lufga-www.Dfonts.org/lufga_fonts/Lufga-Regular.otf');
+}
+
+@font-face {
+    font-family: freshman;
+    src: url('../fonts/fonts/freshman-font/Freshman-POdx.ttf') format('truetype');
+}
+
+body{
+    /* font-family: "freshman"; */
+    background: black;
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+    --scroll-behavior: smooth;
+}
+.logo{
+    height:100px;
+    margin-left:20px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:200px;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.267);
+    z-index: 20;
+    width: 100vw;
+    height: 100px;
+    backdrop-filter: blur;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-right: 20px;
+
+}
+li{
+    list-style: none;
+    background: white;
+    border-radius: 4px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid green;
+}
+a{
+    text-decoration: none;
+    color: #0992cd;
+    font-size: large;
+    font-weight: bold;
+}
+li:hover{
+    box-shadow: 3px 3px 10px 3px #0992cdc8;
+    background: #FF7B02;
+}
+li:hover a{
+    color: white;
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
+#carrousel{
+    width:100vw;
+    height:1000px;
+    position: relative;
+}
+.imgCarroussel{
+    width:100%;
+    position: absolute;
+    animation-duration: 3s;
+    /* animation-name: slideTransition; */
+    opacity: 0%;
+
+}
+.active{
+    /* animation: slideTransition 3s; */
+    opacity: 100%;
+}
+@keyframes slideTransition {
+    from{
+        opacity: 100%;
+    }
+    75%{
+        opacity: 75%;
+    }
+    to{
+        opacity:0%
+    }
+}
+#presentation{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+#presentation p{
+    width:40%;
+}
+h2{
+    text-align: center;
+    margin: 20px;
+}
+.sectionVideo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.sectionShorts{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.sectionContact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.sectionContact p{
+    text-align: center;
+    margin-bottom: 50px;
+}
