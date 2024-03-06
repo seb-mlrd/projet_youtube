@@ -122,8 +122,8 @@ h1{
 }
 h2{
     text-align: center;
-    margin: 50px;
-    font-size: xx-large;
+    margin: 80px;
+    font-size: 50px;
 }
 .sectionVideo{
     display: flex;
@@ -155,20 +155,29 @@ h2{
     display: flex;
     justify-content: space-around;
 }
+.cardGuest{
+    text-align: center;
+}
+.cardGuest h3{
+    font-size: x-large;
+    margin-top: 20px;
+}
+.cardGuest a:hover{
+    color: #FF7B02;
+}
 .guest{
     width:200px;
     height: 200px;
     border-radius: 50%;
-    background:orangered;
 }
-.sectionContact{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-.sectionContact p{
-    text-align: center;
-    margin-bottom: 50px;
+footer{
+    width:100%;
+    background:rgb(27, 27, 27);
+    height:10vh;
+    margin-top:40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 @media screen and (max-width: 768px){
     nav{
