@@ -18,4 +18,4 @@ function changeSlide() {
     index++;
 
 }
-setInterval(changeSlide, 2000)
+setInterval(changeSlide, 4000)
