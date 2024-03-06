@@ -179,6 +179,22 @@ footer{
     justify-content: space-around;
     align-items: center;
 }
+#mentionLeg{
+    padding-top: 200px;
+}
+#mentionLeg h2{
+    font-size: large;
+    margin: 0;
+    text-align: center;
+}
+#mentionLeg h1{
+    font-size: xx-large;
+    position: inherit;
+    text-align: center;
+}
+#mentionLeg p{
+    text-align: center;
+}
 @media screen and (max-width: 768px){
     nav{
         background: black;
