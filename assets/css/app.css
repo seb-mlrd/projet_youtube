@@ -2,23 +2,24 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* font-family: 'lufga'; */
-}
-@font-face {
-    font-family: lufga;
-    src: url('lufga-www.Dfonts.org/lufga-www.Dfonts.org/lufga_fonts/Lufga-Regular.otf');
 }
 
 @font-face {
-    font-family: freshman;
-    src: url('../fonts/fonts/freshman-font/Freshman-POdx.ttf') format('truetype');
+    font-family: "sport";
+    src: url('/projet_youtube/assets/fonts/Police_Octin/octin\ sports\ rg.otf');
 }
 
 body{
     /* font-family: "freshman"; */
-    background: black;
+    background: rgb(255,139,37);
+background: linear-gradient(0deg, rgba(255,139,37,1) 0%, rgba(0,0,0,1) 100%);
     color: white;
     position:relative;
+    font-family: "sport";
+}
+
+h2{
+    font-family: "sport" bold;
 }
 
 html{
@@ -87,29 +88,37 @@ h1{
     height:800px;
     position: relative;
 }
-.imgCarroussel{
-    width:100%;
+.imgCarroussel {
+    width: 100%;
     position: absolute;
-    animation-duration: 3s;
-    /* animation-name: slideTransition; */
-    opacity: 0%;
+    opacity: 0;
     border-bottom: 20px solid repeating-linear-gradient(30deg, #4d9f0c, #9198e5, #4d9f0c);
-    /* border-bottom: repeating-linear-gradient(30deg, #4d9f0c, #9198e5, #4d9f0c 20px) 60; */
+    transition: opacity 0.5s ease;
 }
-.active{
-    /* animation: slideTransition 3s; */
-    opacity: 100%;
+
+.active {
+    opacity: 1; 
 }
+
+
 @keyframes slideTransition {
-    from{
+    0% {
         opacity: 100%;
     }
-    75%{
+    50% {
         opacity: 75%;
     }
-    to{
-        opacity:0%
+    100% {
+        opacity:20%;
     }
+}
+
+.active {
+    animation: slideTransition 3s;
+}
+
+#intro{
+    font-size: 1.5em;
 }
 #presentation{
     display: flex;
