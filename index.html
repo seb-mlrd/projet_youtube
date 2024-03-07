@@ -7,6 +7,7 @@
     <meta name="description" content="Sport Zone 360 est un site sportif descendant de la chaîne YouTube SportZone360 !! Ici retrouvez notre dernière vidéo sortie et shorts ainsi que les personnes que nous avons interviewer !">
     <title>SportZone360</title>
     <link rel="stylesheet" href="./assets/css/app.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body id="container">
     <header>
@@ -14,15 +15,19 @@
            <img src="./assets/img/LOGO_OK.png" alt="logo sportZone360" class="logo">
            <ul role="menu">
                 <li>
-                    <a href="#principal">ACCUEIL</a>
+                    <a href="#principal" class="desktop">ACCUEIL</a>
+                    <a href="#principal" class="mobile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ff8000" d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg></a>
                 </li>
                 <li>
-                    <a href="#video">CHAÎNE</a>
+                    <a href="#video" class="desktop">CHAÎNE</a>
+                    <a href="#video" class="mobile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ff8000" d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a>
                 <li>
-                    <a href="#shorts">SHORTS</a>
+                    <a href="#shorts" class="desktop">SHORTS</a>
+                    <a href="#shorts" class="mobile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ff8000" d="M149.1 64.8L138.7 96H64C28.7 96 0 124.7 0 160V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V160c0-35.3-28.7-64-64-64H373.3L362.9 64.8C356.4 45.2 338.1 32 317.4 32H194.6c-20.7 0-39 13.2-45.5 32.8zM256 192a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"/></svg></a>
                 </li>
                 <li>
-                    <a href="#avis">AVIS</a>
+                    <a href="#avis" class="desktop">AVIS</a>
+                    <a href="#avis" class="mobile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ff8000" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg></a>
                 </li>
            </ul>
         </nav>
@@ -40,14 +45,14 @@
         <h2 id="principal">Présentation</h2>
         <div id="presentation">
             <p>Bienvenue sur notre chaîne dédiée à l'univers passionnant du sport, où la performance, la santé et le bien-être se rencontrent. Préparez-vous à plonger dans un monde où l'activité physique devient une source d'inspiration, de motivation et de bienfaits pour le corps et l'esprit. Rejoignez-nous pour explorer ensemble les multiples facettes du sport et découvrez comment il peut transformer votre vie. Prêts à embarquer dans cette aventure sportive enrichissante ? Let's get started!</p>
-            <img src="./assets/img/sport2.avif" alt="">
+            <img src="./assets/img/laTeam.JPG" alt="" class="team">
         </div>
     </main>
     
     <section aria-labelledby="video" class="sectionVideo" >
         <h2 id="video">Dernière vidéo sortie</h2>
         <iframe width="560" height="315" id="youtube" src="https://www.youtube.com/embed/qKZ71DOFc7M?si=uyKK3RjblOHCDUGP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <div id="intro">
+        <div data-aos="fade-up" id="intro">
             <p>Salut à tous les passionnés de combat et d'adrénaline ! Aujourd'hui, nous plongeons dans l'univers captivant du NoGi, une discipline qui marie la technique, la force mentale et la stratégie. Que vous soyez déjà un adepte ou simplement curieux de découvrir cet art martial complexe, vous êtes au bon endroit. Attachez vos ceintures et préparez-vous à une exploration immersive du monde du grappling, où chaque prise, chaque mouvement, devient une histoire fascinante. Bienvenue dans le royaume de la lutte au sol, où se mêlent habileté technique et détermination sans faille. Sans plus attendre, plongeons dans l'action !</p>
         </div>
     </section>
@@ -55,9 +60,15 @@
     <section aria-label="shorts">
         <h2 id="shorts">Quelques shorts</h2>
         <div class="sectionShorts">
-            <iframe class="shorts" src="https://www.youtube.com/embed/lIdPDN1eCks?si=_RerafWmQF-XM4uo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe class="shorts" src="https://www.youtube.com/embed/lIdPDN1eCks?si=_RerafWmQF-XM4uo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe class="shorts" src="https://www.youtube.com/embed/lIdPDN1eCks?si=_RerafWmQF-XM4uo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div data-aos="fade-right">
+                <iframe class="shorts" src="https://www.youtube.com/embed/lIdPDN1eCks?si=_RerafWmQF-XM4uo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div data-aos="fade-right">
+                <iframe class="shorts" src="https://www.youtube.com/embed/lIdPDN1eCks?si=_RerafWmQF-XM4uo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div data-aos="fade-right">
+                <iframe class="shorts" src="https://www.youtube.com/embed/lIdPDN1eCks?si=_RerafWmQF-XM4uo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
         </div>
     </section>
     
@@ -68,19 +79,19 @@
                 <img class="guest" src="./assets/img/IMG_julien_cazier.jpg" alt="">
                 <h3>Julien Cazier</h3>
                 <p>Site : <a href="https://graciebarra75.com/">Graccie barra paris</a></p>
-                <p>num : 0675891453</p>
+                <p>06 75 89 14 53</p>
             </div>
             <div class="cardGuest">
                 <img class="guest" src="./assets/img/IMG_julien_cazier.jpg" alt="">
                 <h3>Julien Cazier</h3>
                 <p>Site : <a href="https://graciebarra75.com/">Graccie barra paris</a></p>
-                <p>num : 0675891453</p>
+                <p>06 75 89 14 53</p>
             </div>
             <div class="cardGuest">
                 <img class="guest" src="./assets/img/IMG_julien_cazier.jpg" alt="">
                 <h3>Julien Cazier</h3>
                 <p>Site : <a href="https://graciebarra75.com/">Graccie barra paris</a></p>
-                <p>num : 0675891453</p>
+                <p>06 75 89 14 53</p>
             </div>
         </div>
     </section>    
@@ -96,5 +107,9 @@
     </footer>
     
     <script src="./assets/js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
